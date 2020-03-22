@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Футболки, худи, толстовки.</title>
+    <link rel="stylesheet" href="assets/contact.css">
+    <link rel="icon" href="images/short-sleeves.png" type="images/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div id="warp">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html"><img class="graficlogo" src="images/logo.png" alt="Logo" width="100px"></a>
+            </div>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">Домой</a>
+                    <a href="hoody.html">Худи</a>
+                    <a href="sweatshort.html">Свитшот</a>
+                    <a href="tshort.html">Футболки</a>
+                </div>
+            </nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Домой</a></li>
+                    <li><a class="menu__item" href="hoody.html">Худи</a></li>
+                    <li><a class="menu__item" href="sweatshort.html">Свитшот</a></li>
+                    <li><a class="menu__item" href="tshort.html">Футболки</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-md-4"> </div>
+                <div class="col-md-4">
+
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="name" name="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">E-mail:</label>
+                            <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона:</label>
+                            <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea class="form-control" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">Отправить сообщение</button>
+                </div>
+                <div class="col-md-4"> </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <nav>
+                <div class="nav-footer">
+                    <a href="index.html">Домой</a>
+                    <a href="hoody.html">Худи</a>
+                    <a href="sweatshort.html">Свитшот</a>
+                    <a href="tshort.html">Футболки</a>
+                </div>
+            </nav>
+            <div class="social">
+                <a href="#"><img src="images/social/em.png" alt=""></a>
+                <a href="#"><img src="images/social/face.png" alt=""></a>
+                <a href="#"><img src="images/social/goo.png" alt=""></a>
+                <a href="#"><img src="images/social/inst.png" alt=""></a>
+                <a href="#"><img src="images/social/pint.png" alt=""></a>
+            </div>
+            <p>Biosend. 2020</p>
+        </footer>
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 1000);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "row";
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

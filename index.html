@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Футболки, худи, толстовки.</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="images/short-sleeves.png" type="images/x-icon">
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.12.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.12.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img class="graficlogo" src="images/logo.png" alt="Logo" width="100px"></a>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Домой</a>
+                <a href="hoody.html">Худи</a>
+                <a href="sweatshort.html">Свитшот</a>
+                <a href="tshort.html">Футболки</a>
+            </div>
+        </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Домой</a></li>
+                <li><a class="menu__item" href="hoody.html">Худи</a></li>
+                <li><a class="menu__item" href="sweatshort.html">Свитшот</a></li>
+                <li><a class="menu__item" href="tshort.html">Футболки</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="wrapper">
+                <div class="advantages__container">
+                    <div class="advantages">
+                        <div class="advantages__intem">
+                            <a href="job.html"><img src="images/advantages/1.png" alt=""></a>
+                            <h2>График работы</h2>
+                        </div>
+                        <div class="advantages__intem">
+                            <a href="contact.html" onclick="myFunction"><img src="images/advantages/2.png" alt="" id="myFunction()"></a>
+                            <h2>Контакты</h2>
+
+                        </div>
+                        <div class="advantages__intem">
+                            <a href="seller.html"><img src="images/advantages/3.png" alt=""></a>
+                            <h2>Наши продавцы</h2>
+
+                        </div>
+                        <div class="advantages__intem">
+                            <a href="map.html"><img src="images/advantages/4.png" alt=""></a>
+                            <h2>Где мы?</h2>
+
+                        </div>
+                        <div class="advantages__intem">
+                            <a href="categories.html"><img src="images/advantages/5.png" alt=""></a>
+                            <h2>Категории</h2>
+
+                        </div>
+                        <div class="advantages__intem">
+                            <a href="reviews.html"><img src="images/advantages/6.png" alt=""></a>
+                            <h2>Отзывы</h2>
+                            <div class="indentation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <nav>
+            <div class="nav-footer">
+                <a href="index.html">Домой</a>
+                <a href="hoody.html">Худи</a>
+                <a href="sweatshort.html">Свитшот</a>
+                <a href="tshort.html">Футболки</a>
+            </div>
+        </nav>
+        <div class="social">
+            <a href="#"><img src="images/social/em.png" alt=""></a>
+            <a href="#"><img src="images/social/face.png" alt=""></a>
+            <a href="#"><img src="images/social/goo.png" alt=""></a>
+            <a href="#"><img src="images/social/inst.png" alt=""></a>
+            <a href="#"><img src="images/social/pint.png" alt=""></a>
+        </div>
+        <p>Biosend. 2020</p>
+    </footer>
+</body>
+
+</html>
